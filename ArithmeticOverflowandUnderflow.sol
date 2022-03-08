@@ -59,7 +59,7 @@ contract Attack {
     function attack() public payable {
         timeLock.deposit{value: msg.value}();
         /*
-        if t = current lock time then we need to find x such that
+        if t = 当前锁定时间，那么我们需要找到 x 使得
         x + t = 2**256 = 0
         so x = -t
         2**256 = type(uint).max + 1
