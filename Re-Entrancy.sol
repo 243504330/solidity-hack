@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-/* 重新入学
+/* 重新入学 
 漏洞
 假设合约 A 调用合约 B。
 重入漏洞允许 B 在 A 完成执行之前回调 A。
